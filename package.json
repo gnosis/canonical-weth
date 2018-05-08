@@ -1,0 +1,38 @@
+{
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "prepack": "eslint . && npm run fmtsrc",
+    "fmtsrc": "prettier --write \"**/*.{js,json}\"",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "lodash": "^4.17.5",
+    "prettier": "^1.11.1"
+  },
+  "name": "canonical-weth",
+  "description": "Canonical WETH package (see https://blog.0xproject.com/canonical-weth-a9aa7d0279dd)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnosis/canonical-weth.git"
+  },
+  "keywords": [
+    "canonical",
+    "weth",
+    "ethereum",
+    "truffle",
+    "smart-contract"
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gnosis/canonical-weth/issues"
+  },
+  "homepage": "https://github.com/gnosis/canonical-weth#readme"
+}
