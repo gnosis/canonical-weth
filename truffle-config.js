@@ -1,3 +1,5 @@
+const { argv } = require("yargs");
+
 module.exports = {
   networks: {
     mainnet: {
@@ -19,6 +21,11 @@ module.exports = {
       host: "localhost",
       port: 8545,
       network_id: "4"
+    }
+  },
+  compilers: {
+    solc: {
+      version: argv.solcVersion
     }
   }
 };

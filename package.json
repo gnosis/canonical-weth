@@ -3,20 +3,25 @@
     "test": "test"
   },
   "scripts": {
-    "prepack": "eslint . && npm run fmtsrc",
-    "fmtsrc": "prettier --write \"**/*.{js,json}\"",
-    "lint": "eslint ."
+    "prepack": "npm run build && eslint . && npm run fmtsrc",
+    "fmtsrc": "eslint . --fix",
+    "lint": "eslint .",
+    "build": "truffle compile --all && tnt cB && tnt iN",
+    "test": "truffle compile --all --solc-version=0.4.22 && truffle compile --all --solc-version=0.5.0"
   },
   "devDependencies": {
+    "@gnosis.pm/truffle-nice-tools": "^1.3.0",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "lodash": "^4.17.5",
-    "prettier": "^1.11.1"
+    "lodash": "^4.17.11",
+    "prettier": "^1.11.1",
+    "truffle": "^5.0.5",
+    "yargs": "^13.2.1"
   },
   "name": "canonical-weth",
   "description": "Canonical WETH package (see https://blog.0xproject.com/canonical-weth-a9aa7d0279dd)",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "main": "index.js",
   "dependencies": {},
   "repository": {
