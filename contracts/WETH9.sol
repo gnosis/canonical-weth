@@ -13,7 +13,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity >=0.4.22 <0.6;
+// SPDX-License-Identifier: GPL-3.0-only
+pragma solidity >=0.7.0 <0.8;
 
 contract WETH9 {
     string public name     = "Wrapped Ether";
@@ -28,7 +29,7 @@ contract WETH9 {
     mapping (address => uint)                       public  balanceOf;
     mapping (address => mapping (address => uint))  public  allowance;
 
-    function() external payable {
+    receive() external payable {
         deposit();
     }
     function deposit() public payable {
