@@ -1,3 +1,11 @@
+# Canonical W-EVMOS
+
+This is the official repository for the canonical Wrapped Evmos token -- deployed to Evmos Mainnet. 
+
+It has been forked from the official canonical-weth project which can be read about [here](https://blog.0xproject.com/canonical-weth-a9aa7d0279dd). 
+
+*The remainder of this readme has been left in its original form below:*
+
 # Canonical W-ETH
 
 Canonical [W-ETH](https://weth.io/) package (see https://blog.0xproject.com/canonical-weth-a9aa7d0279dd)
